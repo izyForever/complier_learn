@@ -1,0 +1,40 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+gcc -E
+gcc -E
+configure:735:10: fatal error: minix/config.h: No such file or directory
+  735 | #include <minix/config.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+gcc -o conftest -g -O conftest.c
+configure:804:1: warning: return type defaults to 'int' [-Wimplicit-int]
+  804 | main(){return(0);}
+      | ^~~~
+gcc -E
+gcc -E
+gcc -E
+gcc -o conftest -g -O conftest.c
+configure: In function 'main':
+configure:892:67: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+  892 | if (XOR (islower (i), ISLOWER (i)) || toupper (i) != TOUPPER (i)) exit(2);
+      |                                                                   ^~~~
+configure:888:1: note: include '<stdlib.h>' or provide a declaration of 'exit'
+  887 | #include <ctype.h>
+  +++ |+#include <stdlib.h>
+  888 | #define ISLOWER(c) ('a' <= (c) && (c) <= 'z')
+configure:892:67: warning: incompatible implicit declaration of built-in function 'exit' [-Wbuiltin-declaration-mismatch]
+  892 | if (XOR (islower (i), ISLOWER (i)) || toupper (i) != TOUPPER (i)) exit(2);
+      |                                                                   ^~~~
+configure:892:67: note: include '<stdlib.h>' or provide a declaration of 'exit'
+configure:893:1: warning: incompatible implicit declaration of built-in function 'exit' [-Wbuiltin-declaration-mismatch]
+  893 | exit (0); }
+      | ^~~~
+configure:893:1: note: include '<stdlib.h>' or provide a declaration of 'exit'
+gcc -E
+gcc -E
+gcc -E
+gcc -c -g -O conftest.c
+gcc -o conftest -g -O conftest.c
+gcc -o conftest -g -O conftest.c
+gcc -o conftest -g -O conftest.c

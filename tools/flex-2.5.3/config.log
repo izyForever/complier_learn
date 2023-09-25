@@ -1,0 +1,22 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:788:1: warning: return type defaults to 'int' [-Wimplicit-int]
+  788 | main(){return(0);}
+      | ^~~~
+configure: In function 'main':
+configure:875:67: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+  875 | if (XOR (islower (i), ISLOWER (i)) || toupper (i) != TOUPPER (i)) exit(2);
+      |                                                                   ^~~~
+configure:871:1: note: include '<stdlib.h>' or provide a declaration of 'exit'
+  870 | #include <ctype.h>
+  +++ |+#include <stdlib.h>
+  871 | #define ISLOWER(c) ('a' <= (c) && (c) <= 'z')
+configure:875:67: warning: incompatible implicit declaration of built-in function 'exit' [-Wbuiltin-declaration-mismatch]
+  875 | if (XOR (islower (i), ISLOWER (i)) || toupper (i) != TOUPPER (i)) exit(2);
+      |                                                                   ^~~~
+configure:875:67: note: include '<stdlib.h>' or provide a declaration of 'exit'
+configure:876:1: warning: incompatible implicit declaration of built-in function 'exit' [-Wbuiltin-declaration-mismatch]
+  876 | exit (0); }
+      | ^~~~
+configure:876:1: note: include '<stdlib.h>' or provide a declaration of 'exit'
